@@ -1,4 +1,4 @@
-# MATH.ai - JEE Advanced + Engineering Problem Solver
+# AdvMATH.ai - JEE Advanced + Engineering Problem Solver
 
 A comprehensive AI-powered web platform that solves ANY JEE Advanced, Olympiad-level, and engineering problem with step-by-step solutions, automatic visualization, and multi-method validation. Combines the reliability of Casio ClassWiz, intelligence of Mathway, and precision of MATLAB.
 
