@@ -94,11 +94,15 @@ export async function POST(request: NextRequest) {
         mainResult = pod.subpods[0].plaintext
       } else if (pod.id === 'Derivative' && pod.subpods?.[0]?.plaintext && isDerivative) {
         mainResult = pod.subpods[0].plaintext
-      } else if (pod.id === 'IndefiniteIntegral' && pod.subpods?.[0]?.plaintext && isIntegral) {
+      } 
+      // 🔥 FIXED: Correct priority for integrals
+      else if (isIntegral && pod.id === 'DefiniteIntegral' && pod.subpods?.[0]?.plaintext) {
         mainResult = pod.subpods[0].plaintext
-      } else if (pod.id === 'DefiniteIntegral' && pod.subpods?.[0]?.plaintext && isIntegral) {
+      } 
+      else if (isIntegral && pod.id === 'IndefiniteIntegral' && pod.subpods?.[0]?.plaintext && !mainResult) {
         mainResult = pod.subpods[0].plaintext
-      } else if (pod.id === 'Limit' && pod.subpods?.[0]?.plaintext && isLimit) {
+      }
+      else if (pod.id === 'Limit' && pod.subpods?.[0]?.plaintext && isLimit) {
         mainResult = pod.subpods[0].plaintext
       }
 
