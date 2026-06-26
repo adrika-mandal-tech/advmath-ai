@@ -70,6 +70,7 @@ A comprehensive AI-powered web platform that solves engineering problem with ste
 
 - **Frontend**: Next.js 14 with TypeScript
 - **UI Components**: shadcn/ui with Tailwind CSS
+- **WOLFRAM**: Math API Key
 - **Animations**: Framer Motion
 - **Math Engine**: mathjs for calculations
 - **Math Rendering**: KaTeX for LaTeX-quality output
